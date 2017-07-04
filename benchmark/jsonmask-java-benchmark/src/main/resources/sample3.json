@@ -1,0 +1,148 @@
+{
+  "customer": {
+    "identity": {
+      "customerID": "c4d5eb16-52e8-45d8-a8fc-918b1df70d40",
+      "handoverCode": "AK2W",
+      "branchBudgetCentre": "ABCD",
+      "customerReferenceNumber": "ABCD",
+      "title": "Dr",
+      "firstName": "Evelyn",
+      "middlenames": [
+        "Jane"
+      ],
+      "surname": "Ford",
+      "gender": "F",
+      "dateOfBirth": "2007-01-20",
+      "contactable": "Y",
+      "capture": {
+        "urn": 333,
+        "createdDate": "2015-05-01T00:48:15Z",
+        "modifiedDate": "1996-06-23T00:48:15Z",
+        "lastUpdatedBy": "SOME_PERSON"
+      }
+    },
+    "addresses": [
+      {
+        "type": "HOME",
+        "contactable": "Y",
+        "lines": [
+          "48 Moose Street",
+          "65 Bowman Trail",
+          "8 Oak Valley Hill",
+          "0063 Mayer Hill"
+        ],
+        "townCity": "Satsumasendai",
+        "county": "Bath and North East Somerset",
+        "postcode": null,
+        "country": "Japan",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+    ],
+    "emails": [
+      {
+        "type": "PERSONAL",
+        "contactable": "Y",
+        "address": "hlittle0@clickbank.net",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+    ],
+    "phones": [
+      {
+        "type": "HOME",
+        "contactable": "Y",
+        "number": "235-(968)837-1009",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      },
+      {
+        "type": "WORK",
+        "contactable": "N",
+        "number": "86-(289)664-5158",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      },
+      {
+        "type": "MOBILE1",
+        "contactable": "Y",
+        "number": "86-(539)100-3079",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      },
+      {
+        "type": "MOBILE2",
+        "contactable": "N",
+        "number": "55-(436)381-4883",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+    ],
+    "socials": [
+      {
+        "type": "Google",
+        "value": "google.ca",
+        "contactable": "Y",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      },
+      {
+        "type": "Other",
+        "value": "sitemeter.com",
+        "contactable": "N",
+        "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+      }
+    ],
+    "additional": {
+      "PAFed": "N",
+      "customerType": "",
+      "inputDeliveryPointSuffix": "",
+      "deceasedInd": "",
+      "dateOfDeath": "",
+      "goneAwayInd": "",
+      "foreignAddressInd": "",
+      "mailPreferenceServiceInd": "",
+      "privilageCardNo": "",
+      "surpriseBookingInd": "",
+      "capture": {
+          "urn": 333,
+          "createdDate": "2015-05-01T00:48:15Z",
+          "modifiedDate": "1996-06-23T00:48:15Z",
+          "lastUpdatedBy": "SOME_PERSON"
+        }
+    }
+  }
+}

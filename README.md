@@ -16,7 +16,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 //...
 private ObjectMapper mapper = new ObjectMapper();
-JsonNode masked = JsonMask.mask(mapper.readTree(classLoader.getResourceAsStream("sample0.json"))));
+JsonNode jsonNode = objectMapper.readTree("{\"a\":1}");
+JsonNode masked = JsonMask.mask(jsonNode);
 ```
 
 ## Masking strategy

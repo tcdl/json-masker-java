@@ -1,0 +1,635 @@
+[
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13700",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13700/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13700/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13700/events",
+    "html_url": "https://github.com/nodejs/node/pull/13700",
+    "id": 236202140,
+    "number": 13700,
+    "title": "doc: fix api docs style",
+    "user": {
+      "login": "watilde",
+      "id": 1716463,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1716463?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/watilde",
+      "html_url": "https://github.com/watilde",
+      "followers_url": "https://api.github.com/users/watilde/followers",
+      "following_url": "https://api.github.com/users/watilde/following{/other_user}",
+      "gists_url": "https://api.github.com/users/watilde/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/watilde/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/watilde/subscriptions",
+      "organizations_url": "https://api.github.com/users/watilde/orgs",
+      "repos_url": "https://api.github.com/users/watilde/repos",
+      "events_url": "https://api.github.com/users/watilde/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/watilde/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 155267517,
+        "url": "https://api.github.com/repos/nodejs/node/labels/doc",
+        "name": "doc",
+        "color": "006b75",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-15T14:01:16Z",
+    "updated_at": "2017-06-15T14:09:24Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13700",
+      "html_url": "https://github.com/nodejs/node/pull/13700",
+      "diff_url": "https://github.com/nodejs/node/pull/13700.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13700.patch"
+    },
+    "body": "##### Summary\r\n\r\ndoc/api/async_hooks.md\r\n  + L198: Missing code-language flag\r\n  + L239: Missing code-language flag\r\n  + L317: Missing code-language flag\r\n  + L347: Missing code-language flag\r\n\r\ndoc/api/fs.md\r\n  + L2857: Unused definition\r\n\r\n##### Checklist\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\ndoc"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13699",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13699/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13699/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13699/events",
+    "html_url": "https://github.com/nodejs/node/pull/13699",
+    "id": 236183839,
+    "number": 13699,
+    "title": "test: add hasIntl to failing test",
+    "user": {
+      "login": "danbev",
+      "id": 432351,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/432351?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/danbev",
+      "html_url": "https://github.com/danbev",
+      "followers_url": "https://api.github.com/users/danbev/followers",
+      "following_url": "https://api.github.com/users/danbev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/danbev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/danbev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/danbev/subscriptions",
+      "organizations_url": "https://api.github.com/users/danbev/orgs",
+      "repos_url": "https://api.github.com/users/danbev/repos",
+      "events_url": "https://api.github.com/users/danbev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/danbev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 246210555,
+        "url": "https://api.github.com/repos/nodejs/node/labels/intl",
+        "name": "intl",
+        "color": "506b95",
+        "default": false
+      },
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2017-06-15T13:02:21Z",
+    "updated_at": "2017-06-15T14:10:03Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13699",
+      "html_url": "https://github.com/nodejs/node/pull/13699",
+      "diff_url": "https://github.com/nodejs/node/pull/13699.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13699.patch"
+    },
+    "body": "Currently when node is configured `--without-intl` the tests in this\r\ncommit fail. This commit adds checks for internationalization for these\r\ntests\r\n\r\n##### Checklist\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\ntest"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13698",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13698/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13698/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13698/events",
+    "html_url": "https://github.com/nodejs/node/pull/13698",
+    "id": 236177008,
+    "number": 13698,
+    "title": "src: don't set --icu_case_mapping flag on startup",
+    "user": {
+      "login": "bnoordhuis",
+      "id": 275871,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/275871?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnoordhuis",
+      "html_url": "https://github.com/bnoordhuis",
+      "followers_url": "https://api.github.com/users/bnoordhuis/followers",
+      "following_url": "https://api.github.com/users/bnoordhuis/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bnoordhuis/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bnoordhuis/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bnoordhuis/subscriptions",
+      "organizations_url": "https://api.github.com/users/bnoordhuis/orgs",
+      "repos_url": "https://api.github.com/users/bnoordhuis/repos",
+      "events_url": "https://api.github.com/users/bnoordhuis/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bnoordhuis/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 155267502,
+        "url": "https://api.github.com/repos/nodejs/node/labels/c++",
+        "name": "c++",
+        "color": "e11d21",
+        "default": false
+      },
+      {
+        "id": 246210555,
+        "url": "https://api.github.com/repos/nodejs/node/labels/intl",
+        "name": "intl",
+        "color": "506b95",
+        "default": false
+      },
+      {
+        "id": 176191361,
+        "url": "https://api.github.com/repos/nodejs/node/labels/V8%20Engine",
+        "name": "V8 Engine",
+        "color": "0052cc",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-15T12:39:35Z",
+    "updated_at": "2017-06-15T14:11:04Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13698",
+      "html_url": "https://github.com/nodejs/node/pull/13698",
+      "diff_url": "https://github.com/nodejs/node/pull/13698.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13698.patch"
+    },
+    "body": "It's on by default now and the flag will be removed in the near future.\r\n\r\nFixes: https://github.com/nodejs/node/issues/13688\r\n\r\nCI: https://ci.nodejs.org/job/node-test-pull-request/8675/"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13697",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13697/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13697/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13697/events",
+    "html_url": "https://github.com/nodejs/node/pull/13697",
+    "id": 236167032,
+    "number": 13697,
+    "title": "test: check zlib version for createDeflateRaw",
+    "user": {
+      "login": "danbev",
+      "id": 432351,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/432351?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/danbev",
+      "html_url": "https://github.com/danbev",
+      "followers_url": "https://api.github.com/users/danbev/followers",
+      "following_url": "https://api.github.com/users/danbev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/danbev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/danbev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/danbev/subscriptions",
+      "organizations_url": "https://api.github.com/users/danbev/orgs",
+      "repos_url": "https://api.github.com/users/danbev/repos",
+      "events_url": "https://api.github.com/users/danbev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/danbev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      },
+      {
+        "id": 155436008,
+        "url": "https://api.github.com/repos/nodejs/node/labels/zlib",
+        "name": "zlib",
+        "color": "009800",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-15T12:00:05Z",
+    "updated_at": "2017-06-15T14:12:56Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13697",
+      "html_url": "https://github.com/nodejs/node/pull/13697",
+      "diff_url": "https://github.com/nodejs/node/pull/13697.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13697.patch"
+    },
+    "body": "We are currenly builing Node with `--shared-zlib` which happens to be\r\nversion `1.2.8`. The test for zlib.createDeflateRaw is expected to fail\r\nbut does not when using version `1.2.8`.\r\n\r\nAs far as I can tell the fix referred to in the comments was\r\nintroduced in version `1.2.9`:\r\n```\r\n- Reject a window size of 256 bytes if not using the zlib wrapper\r\n```\r\n\r\nThis commit suggests adding a check for the version and skipping this\r\nassert if the version is less than `1.2.9`.\r\n\r\nRefs: http://zlib.net/ChangeLog.txt\r\n\r\n<!--\r\nThank you for your pull request. Please provide a description above and review\r\nthe requirements below.\r\n\r\nBug fixes and new features should include tests and possibly benchmarks.\r\n\r\nContributors guide: https://github.com/nodejs/node/blob/master/CONTRIBUTING.md\r\n-->\r\n\r\n##### Checklist\r\n<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\ntest"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13696",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13696/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13696/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13696/events",
+    "html_url": "https://github.com/nodejs/node/pull/13696",
+    "id": 236148722,
+    "number": 13696,
+    "title": "Upgrade to OpenSSL-1.0.2l for Node-v4",
+    "user": {
+      "login": "shigeki",
+      "id": 782880,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/782880?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shigeki",
+      "html_url": "https://github.com/shigeki",
+      "followers_url": "https://api.github.com/users/shigeki/followers",
+      "following_url": "https://api.github.com/users/shigeki/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shigeki/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shigeki/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shigeki/subscriptions",
+      "organizations_url": "https://api.github.com/users/shigeki/orgs",
+      "repos_url": "https://api.github.com/users/shigeki/repos",
+      "events_url": "https://api.github.com/users/shigeki/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shigeki/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 195128723,
+        "url": "https://api.github.com/repos/nodejs/node/labels/openssl",
+        "name": "openssl",
+        "color": "fbca04",
+        "default": false
+      },
+      {
+        "id": 280213880,
+        "url": "https://api.github.com/repos/nodejs/node/labels/v4.x",
+        "name": "v4.x",
+        "color": "eb6420",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-06-15T10:43:30Z",
+    "updated_at": "2017-06-15T10:44:17Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13696",
+      "html_url": "https://github.com/nodejs/node/pull/13696",
+      "diff_url": "https://github.com/nodejs/node/pull/13696.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13696.patch"
+    },
+    "body": "<!--\r\nThank you for your pull request. Please provide a description above and review\r\nthe requirements below.\r\n\r\nBug fixes and new features should include tests and possibly benchmarks.\r\n\r\nContributors guide: https://github.com/nodejs/node/blob/master/CONTRIBUTING.md\r\n-->\r\n\r\n##### Checklist\r\n<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [ ] tests and/or benchmarks are included\r\n- [ ] documentation is changed or added\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\n\r\ndeps/openssl\r\n\r\nThis PR is upgrading to OpenSSL-1.0.2l agains Node-v4. It includes a series of cherry-picks as 72785dd..d63ff23 in the master for upgrading OpenSSL-1.0.2l of #13233 and doc fix of #13234. It also fixes #12691.\r\n\r\nCC @MylesBorins @gibfahn"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13695",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13695/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13695/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13695/events",
+    "html_url": "https://github.com/nodejs/node/pull/13695",
+    "id": 236147237,
+    "number": 13695,
+    "title": "Upgrade to OpenSSL-1.0.2l for Node-v6",
+    "user": {
+      "login": "shigeki",
+      "id": 782880,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/782880?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shigeki",
+      "html_url": "https://github.com/shigeki",
+      "followers_url": "https://api.github.com/users/shigeki/followers",
+      "following_url": "https://api.github.com/users/shigeki/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shigeki/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shigeki/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shigeki/subscriptions",
+      "organizations_url": "https://api.github.com/users/shigeki/orgs",
+      "repos_url": "https://api.github.com/users/shigeki/repos",
+      "events_url": "https://api.github.com/users/shigeki/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shigeki/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 195128723,
+        "url": "https://api.github.com/repos/nodejs/node/labels/openssl",
+        "name": "openssl",
+        "color": "fbca04",
+        "default": false
+      },
+      {
+        "id": 364835500,
+        "url": "https://api.github.com/repos/nodejs/node/labels/v6.x",
+        "name": "v6.x",
+        "color": "c2e0c6",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2017-06-15T10:37:08Z",
+    "updated_at": "2017-06-15T11:27:40Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13695",
+      "html_url": "https://github.com/nodejs/node/pull/13695",
+      "diff_url": "https://github.com/nodejs/node/pull/13695.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13695.patch"
+    },
+    "body": "<!--\r\nThank you for your pull request. Please provide a description above and review\r\nthe requirements below.\r\n\r\nBug fixes and new features should include tests and possibly benchmarks.\r\n\r\nContributors guide: https://github.com/nodejs/node/blob/master/CONTRIBUTING.md\r\n-->\r\n\r\n##### Checklist\r\n<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [ ] tests and/or benchmarks are included\r\n- [ ] documentation is changed or added\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\n\r\ndeps/openssl\r\n\r\nThis PR is upgrading to OpenSSL-1.0.2l agains Node-v6. It includes a series of cherry-picks as  72785dd9d274cd1b8d91e019cd9d74072a7ba755..d63ff232b2b86587271732e17ddb38c290ecfe77 in the master for upgrading OpenSSL-1.0.2l of #13233 and doc fix of #13234. It also fixes #12691.\r\n\r\nCC @MylesBorins @gibfahn"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13693",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13693/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13693/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13693/events",
+    "html_url": "https://github.com/nodejs/node/pull/13693",
+    "id": 236101897,
+    "number": 13693,
+    "title": "test: improve http test reliability",
+    "user": {
+      "login": "mscdex",
+      "id": 54666,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/54666?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mscdex",
+      "html_url": "https://github.com/mscdex",
+      "followers_url": "https://api.github.com/users/mscdex/followers",
+      "following_url": "https://api.github.com/users/mscdex/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mscdex/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mscdex/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mscdex/subscriptions",
+      "organizations_url": "https://api.github.com/users/mscdex/orgs",
+      "repos_url": "https://api.github.com/users/mscdex/repos",
+      "events_url": "https://api.github.com/users/mscdex/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mscdex/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 155267422,
+        "url": "https://api.github.com/repos/nodejs/node/labels/http",
+        "name": "http",
+        "color": "c7def8",
+        "default": false
+      },
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-15T07:34:36Z",
+    "updated_at": "2017-06-15T13:57:02Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13693",
+      "html_url": "https://github.com/nodejs/node/pull/13693",
+      "diff_url": "https://github.com/nodejs/node/pull/13693.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13693.patch"
+    },
+    "body": "Fake the socket handle to ensure an immediate error is returned uniformly across all platforms.\r\n\r\nCI: https://ci.nodejs.org/job/node-test-pull-request/8670/\r\n\r\n##### Checklist\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] tests and/or benchmarks are included\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n\r\n* test\r\n* http\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13691",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13691/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13691/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13691/events",
+    "html_url": "https://github.com/nodejs/node/pull/13691",
+    "id": 236080711,
+    "number": 13691,
+    "title": "test: add crypto check to test-tls-wrap-econnreset",
+    "user": {
+      "login": "danbev",
+      "id": 432351,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/432351?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/danbev",
+      "html_url": "https://github.com/danbev",
+      "followers_url": "https://api.github.com/users/danbev/followers",
+      "following_url": "https://api.github.com/users/danbev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/danbev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/danbev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/danbev/subscriptions",
+      "organizations_url": "https://api.github.com/users/danbev/orgs",
+      "repos_url": "https://api.github.com/users/danbev/repos",
+      "events_url": "https://api.github.com/users/danbev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/danbev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      },
+      {
+        "id": 155267349,
+        "url": "https://api.github.com/repos/nodejs/node/labels/tls",
+        "name": "tls",
+        "color": "fad8c7",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2017-06-15T05:26:15Z",
+    "updated_at": "2017-06-15T10:33:26Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13691",
+      "html_url": "https://github.com/nodejs/node/pull/13691",
+      "diff_url": "https://github.com/nodejs/node/pull/13691.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13691.patch"
+    },
+    "body": "Currently, there are a few test-tls-wrap-econnreset test that fail when\r\nNode is configured `--without-ssl`:\r\n```console\r\nError: Node.js is not compiled with openssl crypto support\r\n```\r\nThis commit adds crypto checks and skips these tests if no crypto\r\nsupport unavailable.\r\n\r\n##### Checklist\r\n<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\ntest"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13690",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13690/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13690/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13690/events",
+    "html_url": "https://github.com/nodejs/node/pull/13690",
+    "id": 236047208,
+    "number": 13690,
+    "title": "test: remove needless RegExp flags",
+    "user": {
+      "login": "vsemozhetbyt",
+      "id": 10393198,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10393198?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vsemozhetbyt",
+      "html_url": "https://github.com/vsemozhetbyt",
+      "followers_url": "https://api.github.com/users/vsemozhetbyt/followers",
+      "following_url": "https://api.github.com/users/vsemozhetbyt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vsemozhetbyt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vsemozhetbyt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vsemozhetbyt/subscriptions",
+      "organizations_url": "https://api.github.com/users/vsemozhetbyt/orgs",
+      "repos_url": "https://api.github.com/users/vsemozhetbyt/repos",
+      "events_url": "https://api.github.com/users/vsemozhetbyt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vsemozhetbyt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2017-06-15T00:40:56Z",
+    "updated_at": "2017-06-15T05:37:28Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13690",
+      "html_url": "https://github.com/nodejs/node/pull/13690",
+      "diff_url": "https://github.com/nodejs/node/pull/13690.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13690.patch"
+    },
+    "body": "##### Checklist\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] tests and/or benchmarks are included\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\ntest\r\n\r\n* `/m` is needless if `^` and `$` are not used\r\n* `/g` is needless in `split()`\r\n* `/g` is needless in `test()` with one-time `RegExp`/`String`"
+  },
+  {
+    "url": "https://api.github.com/repos/nodejs/node/issues/13689",
+    "repository_url": "https://api.github.com/repos/nodejs/node",
+    "labels_url": "https://api.github.com/repos/nodejs/node/issues/13689/labels{/name}",
+    "comments_url": "https://api.github.com/repos/nodejs/node/issues/13689/comments",
+    "events_url": "https://api.github.com/repos/nodejs/node/issues/13689/events",
+    "html_url": "https://github.com/nodejs/node/pull/13689",
+    "id": 236032960,
+    "number": 13689,
+    "title": "test: refactor test-fs-watch-stop-sync",
+    "user": {
+      "login": "Trott",
+      "id": 718899,
+      "avatar_url": "https://avatars1.githubusercontent.com/u/718899?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Trott",
+      "html_url": "https://github.com/Trott",
+      "followers_url": "https://api.github.com/users/Trott/followers",
+      "following_url": "https://api.github.com/users/Trott/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Trott/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Trott/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Trott/subscriptions",
+      "organizations_url": "https://api.github.com/users/Trott/orgs",
+      "repos_url": "https://api.github.com/users/Trott/repos",
+      "events_url": "https://api.github.com/users/Trott/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Trott/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 155435785,
+        "url": "https://api.github.com/repos/nodejs/node/labels/fs",
+        "name": "fs",
+        "color": "0052cc",
+        "default": false
+      },
+      {
+        "id": 176240519,
+        "url": "https://api.github.com/repos/nodejs/node/labels/test",
+        "name": "test",
+        "color": "990099",
+        "default": false
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2017-06-14T22:58:56Z",
+    "updated_at": "2017-06-15T05:31:36Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/nodejs/node/pulls/13689",
+      "html_url": "https://github.com/nodejs/node/pull/13689",
+      "diff_url": "https://github.com/nodejs/node/pull/13689.diff",
+      "patch_url": "https://github.com/nodejs/node/pull/13689.patch"
+    },
+    "body": "* format test per project guide\r\n* use listener that emits clear message\r\n* use common.mustNotCall() to confirm different listener is not invoked\r\n\r\n<!--\r\nThank you for your pull request. Please provide a description above and review\r\nthe requirements below.\r\n\r\nBug fixes and new features should include tests and possibly benchmarks.\r\n\r\nContributors guide: https://github.com/nodejs/node/blob/master/CONTRIBUTING.md\r\n-->\r\n\r\n##### Checklist\r\n<!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->\r\n\r\n- [x] `make -j4 test` (UNIX), or `vcbuild test` (Windows) passes\r\n- [x] commit message follows [commit guidelines](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#commit-message-guidelines)\r\n\r\n##### Affected core subsystem(s)\r\n<!-- Provide affected core subsystem(s) (like doc, cluster, crypto, etc). -->\r\ntest fs"
+  }
+]
