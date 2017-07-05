@@ -1,3 +1,8 @@
 language: java
 jdk:
 - oraclejdk8
+deploy:
+  provider: bintray
+  file: descriptor.json
+  key:
+    secure: D3Hm3+sw6qu2lOMdvDjQn15+lP2u5OtBfoHxH8Yi7eSXRGH1s+JaA8+os/FgO0tWCR9Mh23x2syIRalTozNBaRU4GqKA/ro+dEKB7dZk9M4Hflm67eTiFJarVbYwKTipqSf3Bxr/umNLwDSaLXMXJlNMxshZkUSE9w7qyx2gAgtPmGT7RiK9TiM969CITCR+kWVLq1nMefsw/Ec3lH3cTW3kmFev0NC+j79Wb7xm34rZ6n8F+li/JMqAV6LZJQlNI+3UlAtlutEktvXydHgUsLAB9IvNO86XgVf4iisBGPMQtDZMGXu3a/Ysf7GTNLFB8J4fAq/IKEUD7q5e5f5X1lrdgMToGtcb0rGdRnSNTXtssFvrdgkekYjTvPVlWwVpPhLDRW2AQqNP7iF9DgaLUolmxmTUgTd+86VpsarlpeoKgqBBFjNQGOzX4jX2iNORRbzA/Fk9Yh0cwgak/Q6p44xkkpu+uwHwnOhAun/jyekqw8rzk1pVIEDAWxWVc5BodqeDTUW2nzWOgc3QOvvdVSdHYm1Cz6UvPfmxjaMzbHHK/Kz2g+Wg/qC8UdMP1WMt+OtYc258r5mVQAAStLiC1nKcX/zhAsClTlSrwokqAe7zYFm4BJ1MLkczG6iIVIoZpfQtpGJqhQzOSzW7cf+PmbT0ZX1iZMY/E4/My0MX0E8=

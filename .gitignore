@@ -10,3 +10,6 @@ target/
 
 #log
 *.log
+
+#file with bintray credentials
+deploy.key
