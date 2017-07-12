@@ -4,6 +4,9 @@ jdk:
 deploy:
   provider: bintray
   file: "descriptor.json"
+  skip_cleanup: true
+  on:
+    tags: true
   user:
     secure: "vX9hdWdZtyKs/bicYujQBhSHbi1I60CtiO/tVNJ04/mbS3MhsPWStuUOw3lQWnsjOAIcBC+zta+QgRuHwGhA8VJm/tfZcEX3bekEiw+kpXFP2nL31IR18efvcsGp9c17u+7uk4gOsKcqBmRja9NzIrghdtQTFLiLu4hnrqdbvekMiVkdv3zSnAZ8L7IEKA5EJdC1dZC3sezjdIkd3pze8bd/wIYgmHH3rwHXQ02vGwWxX8eJOA3LCQ26HSlccYsDmuu1dEwDdPYajOKCSiB0YSdlDFJ982jpO/+6yzV+NaYbR9FdcNuNDGHKZTMcyud3pNBxshD82+sJeSmqXHvoBMGrGDdxLWcRwnt0wiUkTLw2c7BdD3PJU+v0L+bshOr2HerAO3WwYqijEUr02WVctibUQaDeuy2z+VVIK/5YnY7i8wU4eT5Om8f+eaRJ+IJAz7J9BGNqS/Wd0N5tANDNfGUUuF8aSkMlxs4ySpYIl10gQRCwpd4gz+ZJxX9o0p6vJfrLRvpY17bE4Ft2pjM9sZl5oViteZnfMGsE99caJy3Y7Z0jI372m7LnVrTuvY13eH7NutAcgpX2UKHUOCdaj1857F6G8JscjE70WPkQJz0LKOyq38IRzKlsvVLJ/9k/ATugoxPRosVXJzNOZzjj7yc8BhE3o4JTPx1pPnTJQaE="
   key:
