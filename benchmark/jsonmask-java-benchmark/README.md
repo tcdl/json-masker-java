@@ -10,6 +10,7 @@ OS        ubuntu 16.04 64-bit
 
 ### Samples
 We have the same 3 json files as nodejs version uses for performance tests to compare the implementations.
+
 |Sample file |Size (kB)|Throughput (ops/ms)|AvgTime (ms/ops)|
 |------------|:-------:|:-----------------:|---------------:|
 |sample0.json|32.5     |0.730              |1.360           |
