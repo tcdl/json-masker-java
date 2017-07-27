@@ -7,7 +7,6 @@
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
- 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
@@ -44,11 +43,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<distributionManagement>
 		<repository>
-			<id>bintray-json-masker-java</id>
-			<url>https://bintray.com/tcdl/releases/json-masker-java/;publish=1</url>
+			<id>bintray-tcdl-releases</id>
+			<name>tcdl-releases</name>
+			<url>https://api.bintray.com/maven/tcdl/releases/json-masker-java/;publish=1</url>
 		</repository>
 	</distributionManagement>
 </project>
