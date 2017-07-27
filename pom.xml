@@ -44,4 +44,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray-json-masker-java</id>
+			<url>https://bintray.com/tcdl/releases/json-masker-java/;publish=1</url>
+		</repository>
+	</distributionManagement>
 </project>
