@@ -1,5 +1,4 @@
 # json-masker-java
-# Overview
 
 A library for masking field values in JSON. Useful when there is a need to log JSON which potentially contains sensitive data such as PII.
 This project is a port of nodejs [json-masker](https://github.com/tcdl/json-masker) library.
@@ -10,15 +9,21 @@ This project is a port of nodejs [json-masker](https://github.com/tcdl/json-mask
 
 ## Usage
 ```java
-import com.github.tcdl.jsonmask.JsonMask;
+import com.github.tcdl.jsonmask.JsonMasker;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 //...
-private ObjectMapper mapper = new ObjectMapper();
-JsonNode jsonNode = objectMapper.readTree("{\"a\":1}");
-JsonNode masked = JsonMask.mask(jsonNode);
+JsonNode jsonNode = new ObjectMapper().readTree("{\"a\":1}");
+JsonNode masked = new JsonMasker().mask(jsonNode);
 ```
+It is possible to exclude certain fields from masking by adding its names to the whitelist: 
+```java
+Collection<String> whitelist = Arrays.asList("field1", "field2");
+JsonMasker masker = new JsonMasker(whitelist);
+```
+Wherever a field with a whitelisted name appears in the JSON structure, its value will not be masked.
+The whitelist is case insensitive.
 
 ## Masking strategy
 Example of input:

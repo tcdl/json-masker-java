@@ -5,9 +5,10 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
 
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
+
+import static java.util.stream.Collectors.toSet;
 
 public class JsonMasker {
 
@@ -15,14 +16,24 @@ public class JsonMasker {
     private static final Pattern capitalLetters = Pattern.compile("[A-Z]");
     private static final Pattern nonSpecialCharacters = Pattern.compile("[^X\\s!-/:-@\\[-`{-~]");
 
-    public static JsonNode mask(JsonNode target) {
+    private final Set<String> whitelistedFields;
+
+    public JsonMasker(Collection<String> whitelistedFields) {
+        this.whitelistedFields = whitelistedFields.stream().map(String::toUpperCase).collect(toSet());
+    }
+
+    public JsonMasker() {
+        this(Collections.emptySet());
+    }
+
+    public JsonNode mask(JsonNode target) {
         if (target == null)
             return null;
         return traverseAndMask(target.deepCopy());
     }
 
     @SuppressWarnings("ConstantConditions")
-    private static JsonNode traverseAndMask(JsonNode target) {
+    private JsonNode traverseAndMask(JsonNode target) {
         if (target.isTextual()) {
             return new TextNode(maskString(target.asText()));
         }
@@ -34,7 +45,8 @@ public class JsonMasker {
             Iterator<Map.Entry<String, JsonNode>> fields = target.fields();
             while (fields.hasNext()) {
                 Map.Entry<String, JsonNode> field = fields.next();
-                ((ObjectNode) target).replace(field.getKey(), traverseAndMask(field.getValue()));
+                if (!whitelistedFields.contains(field.getKey().toUpperCase()))
+                    ((ObjectNode) target).replace(field.getKey(), traverseAndMask(field.getValue()));
             }
         }
         if (target.isArray()) {
@@ -45,13 +57,13 @@ public class JsonMasker {
         return target;
     }
 
-    private static String maskString(String value) {
+    private String maskString(String value) {
         String tmpMasked = digits.matcher(value).replaceAll("*");
         tmpMasked = capitalLetters.matcher(tmpMasked).replaceAll("X");
         return nonSpecialCharacters.matcher(tmpMasked).replaceAll("x");
     }
 
-    private static String maskNumber(String value) {
+    private String maskNumber(String value) {
         return value.replaceAll("[0-9]", "*");
     }
 }
