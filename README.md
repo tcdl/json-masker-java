@@ -1,7 +1,7 @@
 # json-masker-java
 
 A library for masking field values in JSON. Useful when there is a need to log JSON which potentially contains sensitive data such as PII.
-This project is a port of nodejs [json-masker](https://github.com/tcdl/json-masker) library.
+This project is a port of Node.js [json-masker](https://github.com/tcdl/json-masker) library.
 
 ## Installation
 ```
@@ -17,13 +17,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 JsonNode jsonNode = new ObjectMapper().readTree("{\"a\":1}");
 JsonNode masked = new JsonMasker().mask(jsonNode);
 ```
-It is possible to exclude certain fields from masking by adding its names to the whitelist: 
+## Configuration
+json-masker-java can be configured via parameters passed into constructor:
+ * `whitelist`. A collection of whitelisted field names. Wherever a field with a whitelisted name appears in a JSON structure, its value will _not_ be masked. The whitelist is case-insensitive. Default: empty collection
+ * `enabled`. A boolean flag that toggles masking functionality. If set to `false`, none of the fields will be masked. Might be useful for debug purposes. Default: `true`
+
+### Example 
 ```java
 Collection<String> whitelist = Arrays.asList("field1", "field2");
-JsonMasker masker = new JsonMasker(whitelist);
+boolean maskingEnabled = false;
+JsonMasker masker = new JsonMasker(whitelist, maskingEnabled);
 ```
-Wherever a field with a whitelisted name appears in the JSON structure, its value will not be masked.
-The whitelist is case insensitive.
 
 ## Masking strategy
 Example of input:

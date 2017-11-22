@@ -117,4 +117,26 @@ public class JsonMaskerTest {
         assertEquals(1, masked.get("array1").get(0).get("a").asInt());
         assertEquals(2, masked.get("array1").get(1).get("b").asInt());
     }
+
+    @Test
+    public void testEnabled() throws Exception {
+        String inJson = "{\"a\": \"abc\", \"nested\": {\"b\": \"xyz\"}}";
+        JsonMasker masker = new JsonMasker(false);
+
+        JsonNode masked = masker.mask(mapper.readTree(inJson));
+
+        assertEquals("abc", masked.get("a").asText());
+        assertEquals("xyz", masked.get("nested").get("b").asText());
+    }
+
+    @Test
+    public void testWhitelistingAndEnabled() throws Exception {
+        String inJson = "{\"a\": \"abc\", \"b\": \"xyz\"}";
+        JsonMasker masker = new JsonMasker(Arrays.asList("b", "myField"), false);
+
+        JsonNode masked = masker.mask(mapper.readTree(inJson));
+
+        assertEquals("abc", masked.get("a").asText());
+        assertEquals("xyz", masked.get("b").asText());
+    }
 }
