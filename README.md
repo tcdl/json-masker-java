@@ -5,6 +5,7 @@ This project is a port of Node.js [json-masker](https://github.com/tcdl/json-mas
 
 ## Installation
 ```
+Described on [bintray page](https://bintray.com/tcdl/releases/json-masker-java)
 ```
 
 ## Usage
