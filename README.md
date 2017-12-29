@@ -4,9 +4,8 @@ A library for masking field values in JSON. Useful when there is a need to log J
 This project is a port of Node.js [json-masker](https://github.com/tcdl/json-masker) library.
 
 ## Installation
-```
+
 Described on [bintray page](https://bintray.com/tcdl/releases/json-masker-java)
-```
 
 ## Usage
 ```java
