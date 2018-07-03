@@ -63,12 +63,10 @@ public class JsonMasker {
         for (JsonPath jsonPath : whitelistedJsonPaths) {
             if (jsonPath.isDefinite()) {
                 expandedWhitelistedPaths.add(jsonPath.getPath());
-                continue;
-            }
-            ArrayNode jsonPaths = jsonPath.read(target, jsonPathConfig);
-            Iterator<JsonNode> pathsIterator = jsonPaths.elements();
-            while (pathsIterator.hasNext()) {
-                expandedWhitelistedPaths.add(pathsIterator.next().asText());
+            } else {
+                for (JsonNode node : jsonPath.<ArrayNode>read(target, jsonPathConfig)) {
+                    expandedWhitelistedPaths.add(node.asText());
+                }
             }
         }
 
