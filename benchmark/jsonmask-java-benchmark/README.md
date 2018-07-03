@@ -5,18 +5,18 @@ This subproject contains performance measurement for [json-mask-java]() library.
 
 ### System
 Memory    16G
-Processor Intel® Core™ i5-4590 CPU @ 3.30GHz
-OS        ubuntu 16.04 64-bit
+Processor Intel Core i7-6820HQ @ 2.70GHz
+OS        macOS 10.13
 
 ### Samples
 We have the same 3 json files as nodejs version uses for performance tests to compare the implementations.
 
 |Sample file |Size (kB)|Throughput (ops/ms)|AvgTime (ms/ops)|
 |------------|:-------:|:-----------------:|---------------:|
-|sample0.json|32.5     |0.730              |1.360           |
-|sample1.json|16.3     |1.424              |0.740           |
-|sample2.json|7.6      |3.209              |0.332           |
-|sample3.json|3.9      |13.118             |0.080           |
+|sample0.json|32.5     |0.375              |2.679           |
+|sample1.json|16.3     |0.781              |1.279           |
+|sample2.json|7.6      |2.017              |0.493           |
+|sample3.json|3.9      |3.236              |0.329           |
 
 # Ho To Run
 This is a maven project, so first you have to build it with maven.

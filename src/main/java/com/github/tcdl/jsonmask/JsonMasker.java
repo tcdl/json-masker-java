@@ -4,11 +4,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.node.TextNode;
+import com.jayway.jsonpath.Configuration;
+import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.Option;
+import com.jayway.jsonpath.spi.json.JacksonJsonNodeJsonProvider;
 
 import java.util.*;
 import java.util.regex.Pattern;
-
-import static java.util.stream.Collectors.toSet;
 
 public class JsonMasker {
 
@@ -16,12 +18,27 @@ public class JsonMasker {
     private static final Pattern capitalLetters = Pattern.compile("[A-Z]");
     private static final Pattern nonSpecialCharacters = Pattern.compile("[^X\\s!-/:-@\\[-`{-~]");
 
-    private final Set<String> whitelist;
+    private static final Configuration jsonPathConfig = Configuration.builder()
+            .jsonProvider(new JacksonJsonNodeJsonProvider())
+            .options(Option.AS_PATH_LIST, Option.SUPPRESS_EXCEPTIONS).build();
+
+    private final Set<String> whitelistedKeys;
+    private final Set<JsonPath> whitelistedJsonPaths;
     private final boolean enabled;
 
     public JsonMasker(Collection<String> whitelist, boolean enabled) {
-        this.whitelist = whitelist.stream().map(String::toUpperCase).collect(toSet());
         this.enabled = enabled;
+
+        whitelistedKeys = new HashSet<>();
+        whitelistedJsonPaths = new HashSet<>();
+
+        whitelist.forEach(item -> {
+            if (item.startsWith("$")) {
+                whitelistedJsonPaths.add(JsonPath.compile(item));
+            } else {
+                whitelistedKeys.add(item.toUpperCase());
+            }
+        });
     }
 
     public JsonMasker() {
@@ -42,11 +59,24 @@ public class JsonMasker {
         if (target == null)
             return null;
 
-        return traverseAndMask(target.deepCopy());
+        Set<String> expandedWhitelistedPaths = new HashSet<>();
+        for (JsonPath jsonPath : whitelistedJsonPaths) {
+            if (jsonPath.isDefinite()) {
+                expandedWhitelistedPaths.add(jsonPath.getPath());
+                continue;
+            }
+            ArrayNode jsonPaths = jsonPath.read(target, jsonPathConfig);
+            Iterator<JsonNode> pathsIterator = jsonPaths.elements();
+            while (pathsIterator.hasNext()) {
+                expandedWhitelistedPaths.add(pathsIterator.next().asText());
+            }
+        }
+
+        return traverseAndMask(target.deepCopy(), expandedWhitelistedPaths, "$");
     }
 
     @SuppressWarnings("ConstantConditions")
-    private JsonNode traverseAndMask(JsonNode target) {
+    private JsonNode traverseAndMask(JsonNode target, Set<String> expandedWhitelistedPaths, String path) {
         if (target.isTextual()) {
             return new TextNode(maskString(target.asText()));
         }
@@ -58,25 +88,40 @@ public class JsonMasker {
             Iterator<Map.Entry<String, JsonNode>> fields = target.fields();
             while (fields.hasNext()) {
                 Map.Entry<String, JsonNode> field = fields.next();
-                if (!whitelist.contains(field.getKey().toUpperCase()))
-                    ((ObjectNode) target).replace(field.getKey(), traverseAndMask(field.getValue()));
+                if (!whitelistedKeys.contains(field.getKey().toUpperCase())) {
+                    String childPath = appendPath(path, field.getKey());
+                    if (!expandedWhitelistedPaths.contains(childPath)) {
+                        ((ObjectNode) target).replace(field.getKey(), traverseAndMask(field.getValue(), expandedWhitelistedPaths, childPath));
+                    }
+                }
             }
         }
         if (target.isArray()) {
             for (int i = 0; i < target.size(); i++) {
-                ((ArrayNode) target).set(i, traverseAndMask(target.get(i)));
+                String childPath = appendPath(path, i);
+                if (!expandedWhitelistedPaths.contains(childPath)) {
+                    ((ArrayNode) target).set(i, traverseAndMask(target.get(i), expandedWhitelistedPaths, childPath));
+                }
             }
         }
         return target;
     }
 
-    private String maskString(String value) {
+    private static String appendPath(String path, String key) {
+        return path + "['" + key + "']";
+    }
+
+    private static String appendPath(String path, int ind) {
+        return path + "[" + ind + "]";
+    }
+
+    private static String maskString(String value) {
         String tmpMasked = digits.matcher(value).replaceAll("*");
         tmpMasked = capitalLetters.matcher(tmpMasked).replaceAll("X");
         return nonSpecialCharacters.matcher(tmpMasked).replaceAll("x");
     }
 
-    private String maskNumber(String value) {
+    private static String maskNumber(String value) {
         return value.replaceAll("[0-9]", "*");
     }
 }
